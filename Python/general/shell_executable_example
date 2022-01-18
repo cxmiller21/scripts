@@ -1,0 +1,11 @@
+#!/usr/bin/env python3.7
+
+"""
+If python code needs to be executable from the shell ("$ ./my_script"),
+the "#!/usr/bin/env python3.x" line needs to be added to the top of the file.
+This also means the file doesn't need to explicitly be a .py file.
+"""
+
+import sys
+
+print(f"This script is using python version: {sys.version}\nFrom Path: {sys.path[0]}")
